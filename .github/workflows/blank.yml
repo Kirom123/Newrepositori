@@ -30,8 +30,8 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: docker build -t ghcr.io/kirom123/380-python-app:228 ./python
-      - run: docker push ghcr.io/kirom123/380-python-app:228 
+      - run: docker build -t ghcr.io/kirom123/380-pythone-app:228 ./pythone
+      - run: docker push ghcr.io/kirom123/380-pythone-app:228 
       - run: docker build -t ghcr.io/kirom123/380-node-app:228 ./node
       - run: docker push ghcr.io/kirom123/380-node-app:228 
       
