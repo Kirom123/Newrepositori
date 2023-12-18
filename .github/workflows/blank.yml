@@ -32,8 +32,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: docker build -t ghcr.io/kirom123/380-pythone-app:228 ./pythone
       - run: docker push ghcr.io/kirom123/380-pythone-app:228 
-      - run: docker build -t ghcr.io/kirom123/380-node-app:228 ./node
-      - run: docker push ghcr.io/kirom123/380-node-app:228 
+      - run: docker build -t ghcr.io/kirom123/380-noded-app:228 ./node
+      - run: docker push ghcr.io/kirom123/380-noded-app:228 
       
   deploy:
     # The type of runner that the job will run on
